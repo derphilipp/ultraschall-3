@@ -1,0 +1,9 @@
+os: osx
+language: cpp
+before_install:
+  - brew update
+install:
+  - brew install pandoc
+
+script:
+  - cd Installer && ./build.sh
